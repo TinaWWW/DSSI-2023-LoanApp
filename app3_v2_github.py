@@ -18,7 +18,7 @@ with open('model.pkl', "rb") as f:
 # or performing expensive computations. This is done with the @st.cache decorator.
 # @st.cache()
 
-@st.cache_data()
+#@st.cache_data()
 def prediction(int_rate, emp_length, annual_inc, delinq_2yrs, fico_range_high,revol_bal, open_acc):
 	# Making predictions
 	prediction = model.predict([[int_rate, emp_length, annual_inc, delinq_2yrs,fico_range_high,revol_bal, open_acc]])
